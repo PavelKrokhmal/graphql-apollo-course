@@ -24,7 +24,7 @@ const root = {
         return users
     },
     getUser: ({id}) => {
-        return users.find(user => user.id === id)
+        return users.find(user => user.id === +id)
     },
     createUser: ({input}) => {
         const user = createUser(input)
